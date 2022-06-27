@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+   font-size: 14px;
+}
+:root {
+   /* ### Primary */
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+/* ### Neutral */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+}
+.maincontainer .container {
+    position: relative;
+    width: 550px;
+    height: 400px;
+    background: white;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.leftside {
+    position: relative;
+    width: 275px;
+    height: 100%
+}
+img {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+} 
+.rightside {
+    position: relative;
+    padding: 30px;
+    width: 275px;
+}
+.rightside .content h3 {
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 10px
+}
+.rightside .content h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+}
+.rightside .content p {
+    margin-top: 20px;
+    color: var(--Dark-grayish-blue);
+}
+.rightside .prices {
+    position: relative;
+    margin-top: 25px;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+}
+.rightside .prices .price {
+    font-size: 1.6rem;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+
+}
+.rightside .prices .strikethru {
+    font-size: 11px;
+    height: 100%;
+    /* bottom: 50px; */
+    margin-left: 15px;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+button {
+    position: relative;
+    margin-top:20px;
+    padding: 10px 70px;
+    background: var(--Dark-cyan);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+.img {
+    position: absolute;
+    width: 20px !important;
+    height: 20px;
+    top: 6px;
+    left: 40px;
+}
